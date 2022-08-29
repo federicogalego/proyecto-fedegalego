@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.logo {
+    height: 100px;
+    display: inline;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li a {
+    margin-left: 100px;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    background-color: grey;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    gap: 5px;
+    height: 70vh;
+    align-content: center;
+}
+
+fieldset {
+    border: none;
+}
+
+input {
+    display: block;
+}
+
+img {
+    height: 250px;
+    width: auto;
+}
+
+footer h3 {
+    display: inline-block;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container div {
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    footer h3 {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .bio {
+        background-color: grey;
+    }
+}
